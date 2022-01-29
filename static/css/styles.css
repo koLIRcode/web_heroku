@@ -1,0 +1,85 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #d1d1d1;
+}
+
+.topbar {
+    background-color: #e49619;
+    width: 600px;
+  }
+  
+.main_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.9);
+}
+
+.main_box {
+  background-color: #ffffff;
+  width: 600px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.input_field{
+   width: 300px;
+   margin-left: 25%;
+   margin-bottom: 10px;
+}
+
+.submit_button{
+    margin: 10px 250px 30px 250px;
+    width: 100px;
+    height: 20px;
+    background-color: #e49619;
+    border: none;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.button{
+    width: 100px;
+    height: 20px;
+}
+
+.delete_button{
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    border: none;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 460px;
+}
+
+.text{
+    padding-left: 140px;
+    font-size: 12px;
+}
+
+/* Hello page */
+.greeting{
+    text-align:  center;
+    font-size: 20px;
+}
+
+.back_link{
+    padding-left: 40px;
+    font-size: 12px;
+}

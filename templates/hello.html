@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="static/css/styles.css">
+        <title>Hello</title>
+    </head>
+    <body>
+        <div class="main">
+            <aside class="topbar">
+                <h1 class="main_title">Вітання!</h1>
+            </aside>
+
+            <div class="main_box">
+                <form class="greeting" action="/greeting">
+                    Привіт, {{user_data.name}} {{user_data.surname}}!
+                </form>
+                
+                <br><br>
+                <a class="back_link" href="/">Повернутись назад</a>
+            </div>
+        </div>
+    </body>
+</html>

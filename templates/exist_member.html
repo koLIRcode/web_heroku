@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="static/css/styles.css">
+        <title>Exist member</title>
+    </head>
+    <body>
+        <div class="main">
+            <aside class="topbar">
+                <h1 class="main_title">Вже бачились!</h1>
+            </aside>
+
+            <div class="main_box">
+                <form action="/exist_member">
+                    <p class="greeting"> {{exist_user.name}} {{exist_user.surname}} - ми вже бачились!</p>
+                </form>
+                <br><br>
+
+                <a class="back_link" href="/">Повернутись назад</a>
+            </div>
+        </div>
+    </body>
+</html>

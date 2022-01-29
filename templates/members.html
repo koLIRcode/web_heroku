@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="static/css/styles.css">
+        <title>Members</title>
+    </head>
+    <body>
+        <div class="main">
+            <aside class="topbar">
+                <h1 class="main_title">Ми вже вітались з:</h1>
+            </aside>
+
+                <div class="main_box">
+                    <form class="greeting" action="/show_members" method="GET">
+                        {% for member in members %}
+                        {{member.name}} {{member.surname}}
+                        <br><span style="color:grey; font-size: 15px">email:</span> <span style="font-size: 15px"><b>{{member.email}}</b></span><br><br>
+                        {% endfor %}
+                    </form>
+
+                    <br><br>
+                    <a class="back_link" href="/">Повернутись назад</a>
+                    <a href="/delete_members">
+                        <button class="delete_button">Очистити список</button>
+                    </a>
+                </div>
+        </div>
+    </body>
+</html>

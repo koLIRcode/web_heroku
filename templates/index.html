@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="static/css/styles.css">
+        <title>webService</title>
+    </head>
+    <body>
+        <div class="main">
+            <aside class="topbar">
+                <h1 class="main_title">Введіть свої дані:</h1>
+            </aside>
+            
+            <div class="main_box">
+                <form action="/add" method="POST">
+                    <input class="input_field" type="text" placeholder="ім‘я" name="input_name" >
+                    <br>
+                    <input class="input_field" type="text" placeholder="прізвище" name="input_surname">
+                    <br>
+                    <input class="input_field" type="text" placeholder="email" name="input_email">
+                    <br>
+                    <input class="submit_button" type="submit" value="Привітатись">
+                </form>
+
+                <span class="text">Показати всіх, з ким вже привітались: </span>
+                <a href="/show_members">
+                    <button class="button" name="show_button" type="button" value="Show All">Показати</button>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
